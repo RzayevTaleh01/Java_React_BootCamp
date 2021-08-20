@@ -5,6 +5,7 @@ public class CustomerManager {
     public CustomerManager(Logger[] loggers) {
         this.loggers = loggers;
     }
+    
     public void add(Customer customer){
         System.out.println("Musteri Eklendi "+customer.getFirstname());
         Utils.runLoggers(loggers,customer.getFirstname());
